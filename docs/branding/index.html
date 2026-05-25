@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>サービス資料｜AIインサイトセールス（ブランディング会社様向け）</title>
+<meta name="description" content="株式会社ライトアップ提供。ブランディング会社200社以上の支援実績から導いた、紹介依存→仕組み化の実数値資料。">
+
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3K8TSPFSP2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // URLパラメータから「誰に送ったか」を取得
+  const params = new URLSearchParams(window.location.search);
+  const recipientCompany = params.get('c') || '(unknown)';
+  const senderInitial    = params.get('s') || '(unknown)';
+  const docKind          = 'branding';
+
+  gtag('config', 'G-3K8TSPFSP2', {
+    'custom_map': {
+      'dimension2': 'recipient_company',
+      'dimension3': 'sender_initial',
+      'dimension4': 'doc_kind'
+    }
+  });
+
+  // 資料閲覧開始イベント（webconsul版と統一）
+  gtag('event', 'doc_view', {
+    'recipient_company': recipientCompany,
+    'sender_initial': senderInitial,
+    'doc_kind': docKind
+  });
+</script>
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wst9u2zzlp");
+</script>
+
+<!-- フォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0f1c;
+  --ink-soft: #2a3142;
+  --paper: #fafaf7;
+  --paper-warm: #f4f1e8;
+  --gold: #b08d3f;
+  --gold-deep: #8a6b25;
+  --line: #d8d2c2;
+  --line-soft: #ebe7d8;
+  --accent-red: #c8362b;
+  --accent-green: #4a7d3a;
+  --shadow-sm: 0 1px 2px rgba(10,15,28,0.04);
+  --shadow-md: 0 4px 16px rgba(10,15,28,0.06);
+  --shadow-lg: 0 12px 40px rgba(10,15,28,0.08);
+  --font-display: 'Noto Serif JP', serif;
+  --font-body: 'Noto Sans JP', sans-serif;
+  --font-num: 'Inter', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.7;
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ============ ヘッダー ============ */
+.header {
+  background: var(--ink);
+  color: white;
+  padding: 14px 20px;
+  border-bottom: 3px solid var(--gold);
+}
+.header-inner {
+  max-width: 1000px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 12px;
+}
+.brand {
+  font-family: var(--font-display);
+  font-weight: 700; font-size: 18px;
+  letter-spacing: 0.05em;
+}
+.brand-mark { color: var(--gold); }
+.header-meta {
+  font-size: 11px;
+  color: rgba(255,255,255,0.7);
+}
+.header-meta strong { color: var(--gold); font-weight: 700; }
+
+/* ============ ヒーロー ============ */
+.hero {
+  padding: 48px 20px 36px;
+  background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+  text-align: center;
+}
+.hero-tag {
+  display: inline-block;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--gold-deep);
+  background: rgba(176,141,63,0.12);
+  padding: 6px 16px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.hero-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3.5vw, 32px);
+  font-weight: 900;
+  line-height: 1.45;
+  margin-bottom: 16px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-sub {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.9;
+  max-width: 680px;
+  margin: 0 auto 28px;
+}
+
+/* ============ アクションボタン ============ */
+.actions {
+  display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 14px 28px;
+  font-size: 14px; font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  font-family: var(--font-body);
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+}
+.btn-primary {
+  background: var(--ink); color: white;
+  border: 2px solid var(--ink);
+}
+.btn-primary:hover {
+  background: var(--gold-deep);
+  border-color: var(--gold-deep);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+.btn-secondary {
+  background: white; color: var(--ink);
+  border: 2px solid var(--ink);
+}
+.btn-secondary:hover {
+  background: var(--paper-warm);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+.btn-icon { margin-right: 8px; font-size: 16px; }
+
+.hero-note {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-top: 16px;
+}
+
+/* ============ PDF埋め込み ============ */
+.pdf-section {
+  padding: 24px 20px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.pdf-section-label {
+  text-align: center;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--gold-deep);
+  margin-bottom: 16px;
+}
+.pdf-frame-wrap {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.pdf-frame {
+  width: 100%;
+  height: 800px;
+  border: 0;
+  display: block;
+  background: #525659;
+}
+@media (max-width: 760px) {
+  .pdf-frame { height: 600px; }
+}
+.pdf-fallback {
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-soft);
+  background: var(--paper-warm);
+  border-top: 1px solid var(--line);
+}
+.pdf-fallback a {
+  color: var(--gold-deep);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ============ 商談予約セクション ============ */
+.booking {
+  background: var(--ink);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+.booking-inner { max-width: 720px; margin: 0 auto; }
+.booking-tag {
+  display: inline-block;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.booking-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 900;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.booking-h2 em {
+  font-style: normal;
+  color: var(--gold);
+}
+.booking-lead {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+.booking .btn-primary {
+  background: var(--gold);
+  color: var(--ink);
+  border-color: var(--gold);
+  padding: 18px 36px;
+  font-size: 15px;
+}
+.booking .btn-primary:hover {
+  background: var(--gold-deep);
+  color: white;
+  border-color: var(--gold-deep);
+}
+.booking-note {
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+  margin-top: 16px;
+}
+
+/* ============ フッター ============ */
+.footer {
+  background: var(--paper-warm);
+  padding: 32px 20px 20px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+.footer-brand .gold { color: var(--gold); }
+.footer-meta {
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+}
+.footer-meta a {
+  text-decoration: underline;
+  color: var(--gold-deep);
+}
+.footer-copy {
+  font-size: 10px;
+  color: var(--ink-soft);
+  opacity: 0.6;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 32px 20px 24px; }
+  .btn { padding: 12px 20px; font-size: 13px; }
+  .pdf-section { padding: 16px 12px 40px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ ヘッダー ============ -->
+<header class="header">
+  <div class="header-inner">
+    <div class="brand">INSIGHT<span class="brand-mark">•</span>SALES</div>
+    <div class="header-meta">
+      <strong>株式会社ライトアップ</strong> 提供 / 東証グロース上場
+    </div>
+  </div>
+</header>
+
+<!-- ============ ヒーロー ============ -->
+<section class="hero">
+  <span class="hero-tag">ブランディング会社特化サービス</span>
+  <h1 class="hero-h1">
+    紹介依存から仕組み化へ。<br>
+    ブランディング会社200社以上の実数値資料。
+  </h1>
+  <p class="hero-sub">
+    「クライアントのブランドは育てられる。でも自社の新規受注は紹介頼み」——<br>
+    この共通課題を、<strong>業界特化×AI×1to1配信</strong>の仕組みで解いた実例集です。
+  </p>
+
+  <div class="actions">
+    <a href="./service-branding.pdf"
+       class="btn btn-primary"
+       id="download-btn"
+       download="サービス資料_AIインサイトセールス_ブランディング会社向け.pdf">
+      <span class="btn-icon">📕</span>PDFをダウンロード
+    </a>
+    <a href="https://timerex.net/s/wu/4390e215"
+       target="_blank"
+       rel="noopener"
+       class="btn btn-secondary"
+       id="booking-btn-top">
+      <span class="btn-icon">📅</span>30分の商談を予約する
+    </a>
+  </div>
+
+  <p class="hero-note">
+    ⏱ 商談はオンライン30分・無料 / 売り込みはいたしません
+  </p>
+</section>
+
+<!-- ============ PDF埋め込み ============ -->
+<section class="pdf-section">
+  <div class="pdf-section-label">▼ ブラウザ上でも確認いただけます（全15ページ）</div>
+  <div class="pdf-frame-wrap">
+    <iframe
+      class="pdf-frame"
+      src="./service-branding.pdf#view=FitH&toolbar=1"
+      title="サービス資料｜AIインサイトセールス（ブランディング会社様向け）"
+      loading="lazy"></iframe>
+    <div class="pdf-fallback">
+      PDFが表示されない場合は <a href="./service-branding.pdf" id="download-fallback">こちらから直接ダウンロード</a> してください。
+    </div>
+  </div>
+</section>
+
+<!-- ============ 商談予約セクション ============ -->
+<section class="booking">
+  <div class="booking-inner">
+    <span class="booking-tag">CONSULTATION</span>
+    <h2 class="booking-h2">資料を読んでも判断に迷う場合は、<br><em>30分の壁打ち</em>からご利用ください。</h2>
+    <p class="booking-lead">
+      「自社の現状で本当に機能するか」「自社のターゲット業界での実例はあるか」——<br>
+      御社の状況に合わせて、同業他社の事例を含めてお話しします。<strong style="color:var(--gold);">売り込みはいたしません。</strong>
+    </p>
+    <a href="https://timerex.net/s/wu/4390e215"
+       target="_blank"
+       rel="noopener"
+       class="btn btn-primary"
+       id="booking-btn-main">
+      <span class="btn-icon">📅</span>30分の無料相談を予約する
+    </a>
+    <p class="booking-note">
+      ⏱ オンライン30分 / 営業時間内（平日10:00-18:00） / 商談URLはご予約後にメールでお送りします
+    </p>
+  </div>
+</section>
+
+<!-- ============ フッター ============ -->
+<footer class="footer">
+  <div class="footer-brand">INSIGHT<span class="gold">•</span>SALES</div>
+  <div class="footer-meta">
+    AIインサイトセールス / 運営: <a href="https://www.writeup.co.jp/" target="_blank" rel="noopener">株式会社ライトアップ</a> / 東証グロース上場
+  </div>
+  <div class="footer-copy">© 2026 株式会社ライトアップ. All Rights Reserved.</div>
+</footer>
+
+<script>
+// ===== ダウンロードボタンクリック計測 =====
+function trackDownload(buttonId) {
+  if (typeof gtag === 'undefined') return;
+  gtag('event', 'download_clicked', {
+    'recipient_company': new URLSearchParams(window.location.search).get('c') || '(unknown)',
+    'sender_initial': new URLSearchParams(window.location.search).get('s') || '(unknown)',
+    'doc_kind': 'branding',
+    'button_id': buttonId
+  });
+}
+
+// ===== 商談予約クリック計測 =====
+function trackBooking(buttonId) {
+  if (typeof gtag === 'undefined') return;
+  gtag('event', 'booking_clicked', {
+    'recipient_company': new URLSearchParams(window.location.search).get('c') || '(unknown)',
+    'sender_initial': new URLSearchParams(window.location.search).get('s') || '(unknown)',
+    'doc_kind': 'branding',
+    'button_id': buttonId
+  });
+}
+
+// イベント登録
+document.getElementById('download-btn')?.addEventListener('click', () => trackDownload('hero-download'));
+document.getElementById('download-fallback')?.addEventListener('click', () => trackDownload('fallback-download'));
+document.getElementById('booking-btn-top')?.addEventListener('click', () => trackBooking('hero-booking'));
+document.getElementById('booking-btn-main')?.addEventListener('click', () => trackBooking('main-booking'));
+
+// ===== 滞在時間チェックポイント計測 =====
+[30, 60, 120, 300].forEach(sec => {
+  setTimeout(() => {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'doc_dwell_time', {
+        'seconds': sec,
+        'recipient_company': new URLSearchParams(window.location.search).get('c') || '(unknown)',
+        'doc_kind': 'branding'
+      });
+    }
+  }, sec * 1000);
+});
+
+// ===== スクロール深度計測 =====
+const scrollTracked = new Set();
+window.addEventListener('scroll', () => {
+  const scrollPercent = Math.round(
+    (window.scrollY + window.innerHeight) / document.body.scrollHeight * 100
+  );
+  [25, 50, 75, 100].forEach(threshold => {
+    if (scrollPercent >= threshold && !scrollTracked.has(threshold)) {
+      scrollTracked.add(threshold);
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'doc_scroll_depth', {
+          'percent': threshold,
+          'recipient_company': new URLSearchParams(window.location.search).get('c') || '(unknown)',
+          'doc_kind': 'branding'
+        });
+      }
+    }
+  });
+}, { passive: true });
+</script>
+
+</body>
+</html>
